@@ -1,0 +1,247 @@
+body {
+  background-color: black;
+  font-family: Helvetica; /*R*/
+  font-size: 18px; /*R*/
+  color: white; /*R*/
+  display: flex;/*N*/
+  flex-direction: column;/*N*/
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+header {
+  display: flex; /*N*/
+  width: 100%;
+  height: 2.32rem;
+  background-color: black;
+  justify-content: center;
+  /*border: 2px solid yellow;*/
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  min-width: 975px;
+  height: 2.32rem;
+  align-self: center;
+  justify-content: flex-start;
+  /*border: 2px solid purple;*/
+}
+
+.logo img {
+  display: flex;
+  width: auto;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  /*border: 2px solid purple;*/
+}
+
+.logo h1 {
+  display: flex;
+  font-size: 1rem;
+  margin: 0.66rem 1rem;
+}
+
+/*Everything listed until align-items needed*/
+.bg-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid blue;*/
+}
+
+/*Everything listed until align-items needed*/
+.site-container {
+  display: flex;
+  min-width: 980px;
+  height: auto;
+  flex-direction: column;
+  /*border: 2px solid red;*/
+}
+
+/*blk-box's*/
+.blk-box {
+  display: flex;
+  max-width: 25rem;
+  height: auto;
+  margin: 9rem 0;
+  background-color: black;
+  flex-flow: column wrap;
+  z-index: 10; /*N*/
+  /*border: 2px solid blue;*/
+}
+
+/*bgBox's Black Bar Headers*/
+.blk-box h2 {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 3rem 2rem 3rem;
+  /*border: 2px solid purple;*/
+}
+
+.blk-box h4 {
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2rem 0 0.25rem 3rem;
+  /*border: 2px solid green;*/
+}
+
+/*Red Box Nav.*/
+nav {
+  display: flex;
+  background-color: firebrick;
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  align-items: center;/*N*/
+  justify-content: center;
+  /*flex-flow: row nowrap;
+  justify-content: space-between;
+  /*border: 2px solid blue;*/
+}
+
+.red-box {
+  display: flex;
+  min-width: 975px;
+  height: 2.32rem;
+  align-self: center;
+  /*justify-content: space-around;*/
+
+  border: 2px solid green;
+}
+
+.red-box span {
+  display: inline-block;
+  justify-content: space-around;
+
+}
+
+.red-box a {
+  color: white;
+}
+
+/*white-box Container*/
+.white-box {
+  display: flex;
+  background-color: white;
+  width: 100%;/*R*/
+  height: auto;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*border: 2px solid green;*/
+}
+
+/*product-list container*/
+.product-list {
+  display: flex;
+  margin-top: 3em; /*R*/
+  margin-bottom: 3em;
+  background-color: white;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 975px;
+  height: auto;
+  /*border: 2px solid purple;*/
+}
+
+/*.product-items images*/
+.product-item {
+  display: inline-flex;/*N*/
+  flex-direction: column;
+  width: 13em;
+  height: 13em;
+  align-items: center;/*N*/
+  border: 4px solid black;
+}
+
+.glasses img {
+  max-width: 9em;
+  height: auto;
+  margin: 2em; /*R*/
+  /*border: 2px solid red;*/
+}
+
+.product-item img{
+  width: 9em;
+  height: 9em;
+  margin: 2em; /*R*/
+  /*border: 2px solid red;*/
+}
+
+.product-item h4 {
+  background-color: black;
+  width: 13rem;
+  height: 13rem;
+  text-align: center;
+  padding: 0.5rem 1rem 0.5rem 1rem; /*R*/
+  border: 1px solid black;
+}
+
+/*smallBox's header*/
+.store-info {
+  display: flex;
+  margin: 3rem 0 4rem 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 975px;
+  height: auto;
+
+}
+
+.location h4 {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+  width: 15em;
+  height: 1rem;
+  text-align: left;
+  /*border: 2px solid blue;*/
+}
+
+.hours h4 {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+  width: 15em;
+  height: 1rem;
+  text-align: left;
+  /*border: 2px solid blue;*/
+}
+
+/*smallBox's Addresses*/
+.store-info p {
+  color: black;
+  padding: 0.25em 0 0 0;
+  width: 15em;
+  height: auto;
+  text-align: left;
+}
+
+/*All Footer Info.*/
+footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid blue;*/
+}
+
+.footer-text {
+  display: flex;
+  min-width: 975px;
+  /*border: 2px solid blue;*/
+}
