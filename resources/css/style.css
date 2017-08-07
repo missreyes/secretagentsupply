@@ -104,7 +104,15 @@ nav {
   /*border: 2px solid blue;*/
 }
 
-.red-box {
+.menu {
+  display: flex;
+  min-width: 960px;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-box1 {
   display: flex;
   min-width: 960px;
   height: 2rem;
@@ -113,12 +121,12 @@ nav {
   /*border: 2px solid green;*/
 }
 
-.red-box span {
+.red-box1 span {
   display: inline-block;
   justify-content: space-around;
 }
 
-.red-box a {
+.red-box1 a {
   color: white;
 }
 
@@ -264,7 +272,7 @@ footer {
 }
 
 @media only screen  and (min-width: 1025px) and  (max-width: 2000px) {
-  .menu span {
+  .red-box2  {
     display: none;
   }
 }
@@ -284,22 +292,30 @@ footer {
     align-items: center;
   }
 
-  .red-box {
+  .menu {
+    max-width: 1024px;
+    height: 2rem;
     justify-content: center;
     align-items: center;
   }
 
-  .red-box span {
+  .red-box2 {
+    max-width: 1024px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .red-box1 {
     display: none;
   }
 
-  .menu span {
+  .red-box2 span {
     display: inline-block;
     justify-content: center;
     align-items: center;
   }
 
-  .menu a {
+  .red-box2 a {
     color: white;
   }
 
@@ -322,9 +338,12 @@ footer {
   }
 }
 
-@media only screen  and (max-width: 479px) {
+@media only screen  and (max-width: 470px) {
+  body {
+    min-width: 470px;
+  }
   .site-container {
-    min-width: 480px;
+    min-width: 470px;
     height: auto;
     flex-flow: column wrap;
   }
@@ -335,7 +354,7 @@ footer {
   }
 
   .blk-box {
-    max-width: 480px;
+    min-width: 470px;
     margin-top:  10rem;
     margin-bottom: 0.5rem;
   }
@@ -356,23 +375,40 @@ footer {
     align-items: center;
   }
 
-  .red-box {
+  .menu {
+    max-width: 470px;
+    min-width: 470px;
+    height: 2rem;
     justify-content: center;
     align-items: center;
   }
 
-  .red-box span {
+  .red-box1 {
     display: none;
   }
 
-  .menu span {
+  .red-box2 {
+    max-width: 470px;  /*MUST STAY MAX SO TEXT IS CENTERED*/
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid green;*/
+  }
+
+  .red-box2 span {
+    max-width: 470px;
     display: inline-block;
     justify-content: center;
     align-items: center;
   }
 
-  .menu a {
+  .red-box2 a {
     color: white;
+  }
+
+  .white-box {
+    max-width: 470px;/*R*/
+    margin: 0;
+    /*border: 2px solid green;*/
   }
 
   .product-list {
@@ -440,7 +476,7 @@ footer {
   }
 
   footer {
-    max-width: 480px;
+    min-width: 470px;
     align-content: center;
     justify-content: center;
     /*border: 2px solid blue;*/
