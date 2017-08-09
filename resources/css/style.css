@@ -313,22 +313,31 @@ footer {
   }
 
   .product-list {
-    max-width: 47%;
-    height: 15em;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    /*border: 2px solid green;*/
+    width: 100%;
   }
 
-    .product-list h4 {
-      text-align: center;
-      /*border: 2px solid yellow;*/
+  .pen {
+    width: 47%;
+  }
+
+  .watch {
+   width: 47%
+  }
+
+  .product-list h4 {
+    text-align: center;
+    /*border: 2px solid yellow;*/
     }
 
   .glasses {
     display: none;
   }
+
+  .store-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
 }
 
 @media only screen  and (max-width: 470px) {
@@ -380,7 +389,7 @@ footer {
      display: inline-block;
      justify-content: center;
    }
-  
+
   .red-box2 a {
     color: white;
   }
