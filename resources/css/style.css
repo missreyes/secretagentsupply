@@ -20,7 +20,7 @@ header {
 
 .logo {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   align-items: center;
   /*border: 2px solid purple;*/
 }
@@ -57,7 +57,7 @@ header {
 /*960px box container*/
 .site-container {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   height: auto;
   flex-flow: column wrap;
   /*border: 2px solid red;*/
@@ -106,7 +106,7 @@ nav {
 
 .menu {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   height: 2rem;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ nav {
 
 .red-box1 {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   height: 2rem;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +147,7 @@ nav {
   display: flex;
   margin-top: 3em; /*R*/
   margin-bottom: 3em;
-  min-width: 960px;
+  width: 960px;
   height: auto;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -217,7 +217,7 @@ nav {
 /*Store's info container*/
 .store-info {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   height: auto;
   margin: 0;
   flex-flow: row wrap;
@@ -228,7 +228,7 @@ nav {
 .location h4 {
   background-color: black;
   padding: 1rem 2rem;
-  min-width: 15em;
+  width: 15em;
   height: 1rem;
   text-align: left;
   /*border: 2px solid blue;*/
@@ -248,7 +248,7 @@ nav {
   color: black;
   padding: 0.25em 0 0 0;
   margin-bottom: 4rem;
-  min-width: 15em;
+  width: 15em;
   height: auto;
   text-align: left;
 }
@@ -267,7 +267,7 @@ footer {
 
 .footer-text {
   display: flex;
-  min-width: 960px;
+  width: 960px;
   /*border: 2px solid blue;*/
 }
 
@@ -286,36 +286,29 @@ footer {
     font-size: 1rem;
   }
 
-  nav {
-    max-width: 1024px;
-    justify-content: center;
-    align-items: center;
-  }
-
   .menu {
-    max-width: 1024px;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .red-box2 {
-    max-width: 1024px;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   .red-box1 {
     display: none;
   }
 
+ .red-box2 {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid green;*/
+  }
+
   .red-box2 span {
     display: inline-block;
     justify-content: center;
-    align-items: center;
   }
 
-  .red-box2 a {
+  .red-box2  a {
     color: white;
   }
 
@@ -339,22 +332,19 @@ footer {
 }
 
 @media only screen  and (max-width: 470px) {
-  body {
-    min-width: 470px;
-  }
   .site-container {
-    min-width: 470px;
+    width: 100%;
     height: auto;
     flex-flow: column wrap;
   }
 
   .logo {
-    min-width: 470px;
+    width: 100%;
     align-items: center;
   }
 
   .blk-box {
-    min-width: 470px;
+    /*min-width: 470px;*/
     margin-top:  10rem;
     margin-bottom: 0.5rem;
   }
@@ -369,18 +359,8 @@ footer {
     margin: 1rem 0 0.25rem 2rem;
     }
 
-  nav {
-    max-width: 470px;
-    justify-content: center;
-    align-items: center;
-  }
-
   .menu {
-    max-width: 470px;
-    min-width: 470px;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   .red-box1 {
@@ -388,31 +368,31 @@ footer {
   }
 
   .red-box2 {
-    max-width: 470px;  /*MUST STAY MAX SO TEXT IS CENTERED*/
-    justify-content: center;
-    align-items: center;
-    /*border: 2px solid green;*/
-  }
+     display: flex;
+     width: 100%;
+     height: 2rem;
+     justify-content: center;
+     align-items: center;
+     /*border: 2px solid green;*/
+   }
 
-  .red-box2 span {
-    max-width: 470px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
-
+   .red-box2 span {
+     display: inline-block;
+     justify-content: center;
+   }
+  
   .red-box2 a {
     color: white;
   }
 
   .white-box {
-    max-width: 470px;/*R*/
+    width: 100%; /*R*/
     margin: 0;
     /*border: 2px solid green;*/
   }
 
   .product-list {
-    min-width: 90%;
+    width: 90%;
     height: 15em;
     flex-flow: column wrap;
     justify-content: center;
@@ -421,7 +401,7 @@ footer {
   }
 
   .pen {
-    width: inherit;
+    width: 100%;
     margin: 0;
     /*border: 2px solid blue;*/
     }
@@ -447,7 +427,7 @@ footer {
   }
 
   .store-info {
-    min-width: 470px;
+    width: 100%;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -476,15 +456,16 @@ footer {
   }
 
   footer {
-    min-width: 470px;
+    width: 100%;
     align-content: center;
     justify-content: center;
     /*border: 2px solid blue;*/
   }
 
   .footer-text {
-    min-width: 470px;
+    width: 100%;
     justify-content: center;
     /*border: 2px solid blue;*/
   }
+
   }
